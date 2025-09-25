@@ -6,6 +6,16 @@ body {
     padding: 20px;
 }
 
+main{
+    max-width:  900px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #fff8e1;
+    border: 2px solid #d4c19c;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
 /* Denna Heads-Up-Display är det fritt fram att styla om och placera på andra ställen! */
 
 #hud {
@@ -14,9 +24,20 @@ body {
       left: 0;
       width: 100%;
       background: #fff3cd;
-      color: white;
+      color: #4b3621;
       padding: 10px;
       display: flex;
       justify-content: space-between;
       font-weight: bold;
     }
+
+/* markera skatt*/
+
+.treasure.found {
+    background-color: #fff3cd; 
+    border: 2px solid #ffbf00; 
+    font-weight: bold;
+    color: #ff8c00; 
+    transform: scale(1.2); 
+    box-shadow: 0 0 10px #ffbf00; 
+}
