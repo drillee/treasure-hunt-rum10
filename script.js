@@ -14,6 +14,30 @@ timer = setInterval(() => {
 }, 1000);
 
 // --- Här ska ni lägga in era egna skatter --- //
+const treasures = document.querySelectorAll(".treasure");
+
+treasures.forEach(treasure => {
+  treasure.addEventListener("click", () => {
+    if (treasure.dataset.found) {
+        treasure.dataset.found = "true";
+        treasure.classList.add("found");
+        foundCount++;
+        foundCountEl.textContent = foundCount;
+        alert("Grattis! Du hittade en skatt!");
+
+        if (foundCount === 10) {
+        clearInterval(timer);
+        alert("Alla skatter hittade på " + time + " sekunder!");
+      }
+    } else {
+      alert("Den här skatten har du redan hittat!");
+    }
+  });
+});
+
+
+
+
 // Exempel: skatt 1
 const treasure1 = document.getElementById("treasure1");
 treasure1.addEventListener("click", () => {
@@ -151,3 +175,4 @@ treasure10.addEventListener("click", () => {
     alert("Alla skatter hittade på " + time + " sekunder!");
   }
 });
+
