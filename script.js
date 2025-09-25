@@ -14,6 +14,8 @@ timer = setInterval(() => {
 }, 1000);
 
 // --- Här ska ni lägga in era egna skatter --- //
+
+//i klass .found //
 const treasures = document.querySelectorAll(".treasure");
 
 treasures.forEach(treasure => {
