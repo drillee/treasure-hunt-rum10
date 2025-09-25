@@ -1,3 +1,11 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #fdf6e3;
+    color: #4b3621; 
+    margin: 0;
+    padding: 20px;
+}
+
 /* Denna Heads-Up-Display är det fritt fram att styla om och placera på andra ställen! */
 
 #hud {
@@ -5,7 +13,7 @@
       top: 0;
       left: 0;
       width: 100%;
-      background: #333;
+      background: #fff3cd;
       color: white;
       padding: 10px;
       display: flex;
